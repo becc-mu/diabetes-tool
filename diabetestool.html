@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>DCSIS JavaScript Module Practice</title>
+    <link rel="stylesheet" type="text/css" href="diabetestool.css">
+   <script src="diabetestool.js" type="text/javascript"></script>
+</head>
+<body class="home">
+
+<form id="form1">
+
+ <ul>
+	<li><div class="question">How old are you?</div>
+		<ul class="answear">
+			<li><label for="ageFirst">1-25</label>
+			<input type="radio" name="age" id="ageFirst" value="0" checked="checked"></li>
+
+			<li><label for="ageSeconed">26-40</label>
+			<input type="radio" name="age" id="ageSecond" value="5"></li>
+
+			<li><label for="ageThird">41-60</label>
+			<input type="radio" name="age" id="ageThird" value="8"></li>
+
+			<li>	<label for="ageFourth">60+</label>
+			<input type="radio" name="age" id="ageFourth" value="10"></li>
+		</ul>
+	</li>
+	<li><div class="question">What is your BMI?</div>
+		<ul class="answear">
+			<li><label for="bmiFirst">0-25</label>
+			<input type="radio" name="bmi" id="bmiFirst" value="0" checked="checked"></li>
+
+			<li><label for="bmiSeconed">26-30</label>
+			<input type="radio" name="bmi" id="bmiSeconed" value="0"></li>
+
+			<li><label for="bmiThird">31-35</label>
+			<input type="radio" name="bmi" id="bmiThird" value="9"></li>
+
+			<li><label for="bmiFourth">35+</label>
+			<input type="radio" name="bmi" id="bmiFourth" value="10"></li>
+		</ul>
+
+	</li>
+	<li><div class="question">Does anybody in your family have diabetes?</div>
+		<ul class="answear">
+			<li><label for="diabetesFirst">No.</label>
+			<input type="radio" name="diabetes" id="diabetesFirst" value="0" checked="checked"></li>
+
+			<li><label for="diabetesSeconed">Grandparent</label>
+			<input type="radio" name="diabetes" id="diabetesSeconed" value="7"></li>
+
+			<li><label for="diabetesThird">Sibling</label>
+			<input type="radio" name="diabetes" id="diabetesThird" value="15"></li>
+
+			<li><label for="diabetesFourth">Parent</label>
+		<input type="radio" name="diabetes" id="diabetesFourth" value="15"></li>
+		</ul>
+	</li>
+	<li><div class="question">How would you describe your diet?
+	</div>
+	<ul class="answear">
+		<li><label for="dietFirst">Low sugar</label>
+		<input type="radio" name="diet" id="dietFirst" value="0" checked="checked"/></li>
+
+		<li><label for="dietSeconed">Normal sugar</label>
+		<input type="radio" name="diet" id="dietSeconed" value="0"></li>
+
+		<li><label for="dietThird">Quite high<br> sugar?</label>
+		<input type="radio" name="diet" id="dietThird" value="7"></li>
+
+		<li><label for="dietFourth">High Sugar</label>
+		<input type="radio" name="diet" id="dietFourth" value="10"></li>
+	</ul>
+</ul>
+		<input id="btn1" type="submit" value="Calculate">
+	</form>
+	<div id="results">
+	<article id="lowRisk" class="riskLevel" style="display: none;">
+      <p>Your results show that you currently have a low risk of developing diabetes. However, it is important that you maintain a healthy lifestyle in terms of diet and exercise.</p>
+    </article>
+	
+	<article id="midRisk" class="riskLevel" style="display: none;">
+      <p>Your results show that you currently have a medium risk of developing diabetes. For more information on your risk factors, and what to do about them, please visit our diabetes advice website at <a href="#"></a>http://www.zha.org.zd.</p>
+    </article>
+	
+	<article id="hiRisk" class="riskLevel" style="display: none;">
+      <p>Your results show that you currently have a HIGH risk of developing diabetes. <span id="mainRisks"></span> We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our <a href="contactForm.html">contact form</a> and a member of the Health Authority Diabetes Team will be in contact with you.</p>
+    </article>
+	</div>
+  </body>
+</html>
